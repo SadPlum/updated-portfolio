@@ -1,0 +1,29 @@
+.header {
+  height: 50px;
+  width: 100%;
+  background-color: burlywood;
+  position: sticky;
+  top: 0;
+  .headerContainer {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+
+    .nameBox {
+      font-size: 1.2rem;
+      font-family: "Kanit", sans-serif;
+    }
+    .tabBox {
+      margin-left: auto;
+
+      display: flex;
+      flex-direction: row;
+      .tab {
+        padding-left: 15px;
+      }
+    }
+  }
+}

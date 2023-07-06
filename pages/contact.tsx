@@ -1,14 +1,12 @@
 import Head from "next/head";
-import style from "../styles/main/Index.module.scss";
+import Image from "next/image";
 import { Inter } from "next/font/google";
 import Frontpage from "./components/frontpage/Frontpage";
 import Header from "./components/shared/Header";
 import Footer from "./components/shared/Footer";
-import IconSpin from "./components/frontpage/IconSpin";
+import style from "../styles/main/Contact.module.scss";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+export default function contact() {
   return (
     <>
       <Head>
@@ -18,16 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className={style.home}>
-        <section className={style.frontPage}>
-          <div className={style.titleSection}>
-            <h1 className={style.indexTitle}>
-              Sébastien Legault, Full-Stack Developer
-            </h1>
-          </div>
-          <IconSpin />
-        </section>
-      </main>
+      <main className={style.home}>Contact Page</main>
       <Footer />
     </>
   );

@@ -1,0 +1,103 @@
+.container {
+  position: relative;
+  min-height: 100vh;
+  background-color: #f0ecec;
+  font-family: "Helvetica Neue", sans-serif;
+  height: 100%;
+  min-width: 375px;
+}
+
+.wrap {
+  padding-bottom: 225px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.perfectPupHome {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.perfectPupHome .homeRow {
+  margin-bottom: 40px !important;
+}
+.perfectPupHome .textBox {
+  display: flex;
+  flex-direction: column;
+  font-family: "Helvetica Neue", sans-serif;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+  background-color: #f0ecec;
+  height: 100%;
+}
+@media (min-width: 1024px) {
+  .perfectPupHome .textBox {
+    width: 50%;
+  }
+}
+.perfectPupHome .textBox .textBoxTitle {
+  font-weight: 500;
+  width: 80%;
+  border-bottom: 2px solid black;
+  font-size: 1.4rem;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  .perfectPupHome .textBox .textBoxTitle {
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+    font-size: 2rem;
+  }
+}
+.perfectPupHome .textBox .textBoxParag {
+  width: 80%;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  .perfectPupHome .textBox .textBoxParag {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+}
+.perfectPupHome .pawIconHome {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+@media (min-width: 1024px) {
+  .perfectPupHome .pawIconHome {
+    display: none;
+  }
+}
+.perfectPupHome .homeContactInformation {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.perfectPupHome .homeContactInformation .textBox {
+  width: 100%;
+}
+.perfectPupHome .slider {
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .perfectPupHome .slider {
+    align-self: center;
+    display: block;
+    margin: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .perfectPupHome .slider {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}/*# sourceMappingURL=Home.module.css.map */

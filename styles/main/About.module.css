@@ -1,0 +1,21 @@
+.home {
+  background-color: #fff;
+  height: calc(100vh - 100px);
+  max-width: 800px;
+  margin: auto;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 40px 80px;
+}
+.about .aboutTitle {
+  margin-bottom: 20px;
+}
+.about .aboutParagraph {
+  margin-bottom: 15px;
+}/*# sourceMappingURL=About.module.css.map */

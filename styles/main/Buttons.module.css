@@ -1,0 +1,110 @@
+.link {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  margin: auto;
+  padding: 0;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link .btnText {
+  position: absolute;
+  z-index: 9999;
+  color: black;
+  font-size: 0.8rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.link .linkBtn {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  background-color: beige;
+  border-radius: 1px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  min-width: 80px;
+  margin: auto;
+  cursor: pointer;
+}
+.link .linkBtn .upper {
+  min-width: 80px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.link .linkBtn .btnUpper {
+  height: 15px;
+  min-width: 80px;
+  background-color: #fff;
+}
+.link .linkBtn .btnUpperSlide {
+  position: absolute;
+  transform: translateX(-80px);
+  -webkit-transform: translateX(-80px);
+  min-width: 80px;
+  height: 15px;
+  background-color: rgb(231, 231, 172);
+}
+.link .linkBtn .btnUpperOut {
+  animation: slide-out-upper 0.2s;
+}
+@keyframes slide-out-upper {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-80px);
+  }
+}
+.link .linkBtn .lower {
+  min-width: 80px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.link .linkBtn .btnLower {
+  height: 15px;
+  min-width: 80px;
+  background-color: rgb(231, 231, 172);
+}
+.link .linkBtn .btnLowerSlide {
+  position: absolute;
+  transform: translateX(80px);
+  -webkit-transform: translateX(80px);
+  min-width: 80px;
+  height: 15px;
+  background-color: #fff;
+}
+.link .linkBtn .btnLowerOut {
+  animation: slide-out-lower 0.2s;
+}
+@keyframes slide-out-lower {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(80px);
+  }
+}
+.link:hover .btnUpperSlide {
+  animation: slide-upper 0.2s forwards;
+}
+.link:hover .btnLowerSlide {
+  animation: slide-lower 0.2s forwards;
+}
+@keyframes slide-upper {
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes slide-lower {
+  100% {
+    transform: translateX(0px);
+  }
+}/*# sourceMappingURL=Buttons.module.css.map */

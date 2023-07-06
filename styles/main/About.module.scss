@@ -1,0 +1,16 @@
+@import "./shared";
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 40px 80px;
+  .aboutTitle {
+    margin-bottom: 20px;
+  }
+  .aboutParagraph {
+    margin-bottom: 15px;
+  }
+}

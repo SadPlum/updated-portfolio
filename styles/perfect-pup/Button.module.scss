@@ -1,0 +1,20 @@
+@import "variables";
+
+.btn {
+  background: $dark-color-highlight;
+  padding: 10px 15px;
+  border-radius: 1px;
+  font-size: 1.2rem;
+  color: $light-color;
+
+  .text2 {
+    text-transform: capitalize;
+  }
+
+  &:hover {
+    background: $dark-color;
+  }
+  &:focus {
+    background: $dark-color;
+  }
+}

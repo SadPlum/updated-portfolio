@@ -1,0 +1,79 @@
+.home {
+  background-color: #fff;
+  height: calc(100vh - 100px);
+  max-width: 800px;
+  margin: auto;
+}
+
+.frontPage .titleSection {
+  margin: auto;
+  padding-top: 40px;
+}
+.frontPage .titleSection .indexTitle {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.frontPage .animation {
+  width: 60px;
+  height: 400px;
+  margin: 40px auto;
+  position: relative;
+  border-radius: 50%;
+  animation: spin 18s linear infinite;
+}
+.frontPage .animation .box {
+  position: absolute;
+  height: 400px;
+  width: 60px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.frontPage .animation .box:nth-child(1) {
+  rotate: 45deg;
+}
+.frontPage .animation .box:nth-child(2) {
+  rotate: 90deg;
+}
+.frontPage .animation .box:nth-child(3) {
+  rotate: 135deg;
+}
+.frontPage .animation .circle {
+  height: 60px;
+  width: 60px;
+  margin: 0;
+  border-radius: 50%;
+  z-index: 10;
+  animation: counter-spin 18s linear infinite;
+}
+.frontPage .animation .circle1 {
+  rotate: -45deg;
+}
+.frontPage .animation .circle2 {
+  rotate: -90deg;
+}
+.frontPage .animation .circle3 {
+  rotate: -135deg;
+}
+.frontPage .animation .icon {
+  width: 60px;
+  height: 60px;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes counter-spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}/*# sourceMappingURL=Index.module.css.map */

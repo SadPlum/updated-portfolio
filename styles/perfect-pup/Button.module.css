@@ -1,0 +1,14 @@
+.btn {
+  background: #963876;
+  padding: 10px 15px;
+  border-radius: 1px;
+  font-size: 1.2rem;
+  color: #f0ecec;
+
+}
+.btn:hover {
+  background: #832161;
+}
+.btn:focus {
+  background: #832161;
+} /*# sourceMappingURL=Button.module.css.map */

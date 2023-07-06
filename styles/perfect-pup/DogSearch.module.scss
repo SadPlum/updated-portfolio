@@ -1,0 +1,54 @@
+@import "variables";
+.dogSearch {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  .dogSearch-head {
+    margin-bottom: 20px;
+    @media (min-width: $md) {
+      margin-bottom: 40px;
+    }
+    .dogSearch-title {
+      font-size: 1.5rem;
+      margin: 20px 0;
+    }
+  }
+  .searchBars {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $md) {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  .dogListings {
+    @media (min-width: $md) {
+      width: 40%;
+      margin: 0;
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-bottom: 40px;
+    }
+    @media (min-width: $lg) {
+      width: 30%;
+    }
+  }
+
+  .dogSearch-paw-icon {
+    height: 50px;
+    width: 50px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}

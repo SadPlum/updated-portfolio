@@ -1,14 +1,13 @@
 import Head from "next/head";
-import style from "../styles/main/Index.module.scss";
+import Image from "next/image";
 import { Inter } from "next/font/google";
 import Frontpage from "./components/frontpage/Frontpage";
 import Header from "./components/shared/Header";
 import Footer from "./components/shared/Footer";
-import IconSpin from "./components/frontpage/IconSpin";
+import Projects from "./components/projects/Projects";
+import style from "../styles/main/Projects.module.scss";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+export default function projects() {
   return (
     <>
       <Head>
@@ -19,14 +18,7 @@ export default function Home() {
       </Head>
       <Header />
       <main className={style.home}>
-        <section className={style.frontPage}>
-          <div className={style.titleSection}>
-            <h1 className={style.indexTitle}>
-              Sébastien Legault, Full-Stack Developer
-            </h1>
-          </div>
-          <IconSpin />
-        </section>
+        <Projects />
       </main>
       <Footer />
     </>

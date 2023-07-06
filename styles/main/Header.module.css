@@ -1,0 +1,27 @@
+.header {
+  height: 50px;
+  width: 100%;
+  background-color: burlywood;
+  position: sticky;
+  top: 0;
+}
+.header .headerContainer {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 800px;
+  margin: auto;
+}
+.header .headerContainer .nameBox {
+  font-size: 1.2rem;
+  font-family: "Kanit", sans-serif;
+}
+.header .headerContainer .tabBox {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+}
+.header .headerContainer .tabBox .tab {
+  padding-left: 15px;
+}/*# sourceMappingURL=Header.module.css.map */

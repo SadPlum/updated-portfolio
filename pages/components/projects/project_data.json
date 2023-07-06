@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Sudoku",
+    "stack": ["HTML", "CSS", "Javascript"],
+    "type": "Personal Project",
+    "role": "Recursion, Data-Structures and Algorithms",
+    "github": "https://github.com/SadPlum/sudokuNew",
+    "url": "https://sadplum.github.io/sudokuNew/"
+  },
+  {
+    "title": "Perfect Pup",
+    "stack": ["React", "Express", "Node.JS", "MongoDB", "SASS"],
+    "type": "Personal Project",
+    "role": "React, Design and Full-Stack",
+    "github": "https://netlify--perfectpup.netlify.app/search"
+  },
+  {
+    "title": "Pathfinding Algorithm in C",
+    "stack": ["C"],
+    "type": "Personal Project",
+    "role": "Programming Fundamentals, Low-Level Concepts and Algorithms",
+    "github": "https://github.com/SadPlum/pathfindingAlgo-main"
+  },
+  {
+    "title": "Meal Plan",
+    "stack": ["React", "Typescript", "Node", "GraphQL", "Express", "Cypress"],
+    "type": "Volunteer",
+    "role": "Front-End and E2E-Testing",
+    "github": "https://github.com/CivicTechFredericton/mealplanner"
+  },
+  {
+    "title": "Sudoku Reimagined",
+    "stack": ["React", "Typescript", "Node", "Express", "MongoDB"],
+    "type": "Personal Project",
+    "role": "Test-Driven-Development, Back-End and Algorithms",
+    "github": "https://github.com/SadPlum/Sudoku-Timed-App"
+  },
+  {
+    "title": "Old Portfolio",
+    "stack": ["React", "Typescript", "SASS"],
+    "type": "Personal Project",
+    "role": "CSS Animations, Intersection Observer and React",
+    "github": "https://github.com/SadPlum/SLPortfolio",
+    "url": "https://sebastienlegault.com/"
+  }
+]

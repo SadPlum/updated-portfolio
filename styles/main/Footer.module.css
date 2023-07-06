@@ -1,0 +1,9 @@
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(231, 229, 229);
+}
+.footer .footerContainer {
+  max-width: 800px;
+  margin: auto;
+}/*# sourceMappingURL=Footer.module.css.map */

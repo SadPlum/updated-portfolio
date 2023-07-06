@@ -1,0 +1,113 @@
+.link {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  margin: auto;
+  padding: 0;
+  min-width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .btnText {
+    position: absolute;
+    z-index: 9999;
+    color: black;
+    font-size: 0.8rem;
+    width: fit-content;
+  }
+  .linkBtn {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background-color: beige;
+    border-radius: 1px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    min-width: 80px;
+    margin: auto;
+
+    cursor: pointer;
+    .upper {
+      min-width: 80px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+    }
+    .btnUpper {
+      height: 15px;
+      min-width: 80px;
+      background-color: #fff;
+    }
+    .btnUpperSlide {
+      position: absolute;
+      transform: translateX(-80px);
+      -webkit-transform: translateX(-80px);
+      min-width: 80px;
+      height: 15px;
+      background-color: rgb(231, 231, 172);
+    }
+    .btnUpperOut {
+      animation: slide-out-upper 0.2s;
+    }
+    @keyframes slide-out-upper {
+      0% {
+        transform: translateX(0px);
+      }
+      100% {
+        transform: translateX(-80px);
+      }
+    }
+    .lower {
+      min-width: 80px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+    }
+    .btnLower {
+      height: 15px;
+      min-width: 80px;
+      background-color: rgb(231, 231, 172);
+    }
+    .btnLowerSlide {
+      position: absolute;
+      transform: translateX(80px);
+      -webkit-transform: translateX(80px);
+      min-width: 80px;
+      height: 15px;
+      background-color: #fff;
+    }
+    .btnLowerOut {
+      animation: slide-out-lower 0.2s;
+    }
+    @keyframes slide-out-lower {
+      0% {
+        transform: translateX(0px);
+      }
+      100% {
+        transform: translateX(80px);
+      }
+    }
+  }
+
+  &:hover {
+    .btnUpperSlide {
+      animation: slide-upper 0.2s forwards;
+    }
+    .btnLowerSlide {
+      animation: slide-lower 0.2s forwards;
+    }
+  }
+  @keyframes slide-upper {
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  @keyframes slide-lower {
+    100% {
+      transform: translateX(0px);
+    }
+  }
+}
